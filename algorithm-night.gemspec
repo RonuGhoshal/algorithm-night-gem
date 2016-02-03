@@ -3,7 +3,7 @@ lib = File.expand_path("../lib/", __FILE__)
 
 Gem::Specification.new do |s|
   s.name                  = "algorithm-night"
-  s.version               = "0.0.2"
+  s.version               = "0.0.3"
   s.summary               = "Data structures & Algorithms"
   s.description           = "a Gem for Algorithms and Data Structures, a la DevBootcamp Algorithm Night"
   s.authors               = ["John Akers"]
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
     "lib/algorithm-night/linkedlist.rb",
     "lib/algorithm-night/node.rb",
     "lib/algorithm-night/algorithms.rb",
+    "lib/algorithm-night/bstnode.rb",
+    "lib/algorithm-night/binarysearchtree.rb",
     "bin/algorithm-night"
   ]
   s.homepage              = "https://github.com/DevBootcamp-Algorithm-Night/algorithm-night-gem"

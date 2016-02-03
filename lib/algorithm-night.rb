@@ -7,5 +7,5 @@ require 'algorithm-night/node'
 require 'algorithm-night/linkedlist'
 
 # binary search tree
-require 'algorithm-night/bst-node'
-require 'algorithm-night/binary-search-tree'
+require 'algorithm-night/bstnode'
+require 'algorithm-night/binarysearchtree'
