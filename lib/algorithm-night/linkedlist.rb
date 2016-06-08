@@ -1,34 +1,46 @@
+class LLNode
+  attr_accessor :next, :value
+  def initialize(value)
+    @value = value
+    @next  = nil
+  end
+end
+
 class LinkedList
-  
+
   def initialize
     @head = nil
   end
 
   def add(value)
     if @head.nil?
-      @head = Node.new(value)
+      @head = LLNode.new(value)
     else
       current = @head
       while not current.next.nil?
         current = current.next
       end
-      current.next = Node.new(value)
+      current.next = LLNode.new(value)
     end
   end
 
   def delete(value)
     if @head.nil?
       return nil
+    elsif @head.value == value
+      @head = @head.next
     else
       current = @head
-      while not current.next.nil?
-        if current.next.value.eql?(value)
-          deleted = current.next
-          current.next = current.next.next
-          return deleted
-        end
+        while not current.next.nil?
+          if current.next.value.eql?(value)
+            deleted = current.next
+            current.next = current.next.next
+            return deleted
+          else
+            current = current.next
+          end
+        return nil
       end
-      return nil
     end
   end
 
